@@ -6,7 +6,7 @@ namespace :duke_camp do
   task csv_import: [:environment] do
     puts "importing CSV"
 
-    csv_file = "./imageWork.csv"
+    csv_file = "./spec/fixtures/three_line_example.csv"
     CsvImporter.new(csv_file).import
   end
 end
